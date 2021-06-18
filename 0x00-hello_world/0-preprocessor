@@ -1,2 +1,4 @@
 #!/bin/bash
-gcc -Wall -c -o main.o main.es.c
+export $CFILE=main.c
+gcc -E $CFILE -o c
+
