@@ -7,12 +7,12 @@
  */
 int _isalpha(int c)
 {
-	if (c == 59)
+	if (c != 59)
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		return (1);
+		return (0);
 	}
 }
