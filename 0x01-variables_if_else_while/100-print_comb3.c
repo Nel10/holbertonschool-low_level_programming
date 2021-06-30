@@ -19,10 +19,8 @@ int main(void)
 			putchar(y);
 			putchar(',');
 			putchar(' ');
-			y = y + 1;
+			x = y + 1;
 		}
-		x = x + 1;
-		y = x + 1;
 	}
 	putchar('\n');
 	return (0);
