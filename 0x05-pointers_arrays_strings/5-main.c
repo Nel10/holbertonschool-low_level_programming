@@ -1,5 +1,7 @@
 #include "holberton.h"
 
+#include <stdio.h>
+
 
 
 /**
@@ -13,15 +15,19 @@
  *     */
 
 int main(void)
+
 {
-	char *str;
+
+	    char s[10] = "Holberton";
 
 
 
-	        str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	        printf("%s\n", s);
 
-		    print_rev(str);
+		    rev_string(s);
 
-		        return (0);
+		        printf("%s\n", s);
+
+			    return (0);
 
 }
