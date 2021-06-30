@@ -13,6 +13,7 @@ int main(void)
 	while (x < '9')
 	{
 		int y = x + 1;
+
 		while (y <= '9')
 		{
 			putchar (x);
