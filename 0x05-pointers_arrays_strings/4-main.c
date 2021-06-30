@@ -13,8 +13,10 @@
  *     */
 
 int main(void)
+
 {
-	char *str;
+
+	    char *str;
 
 
 
