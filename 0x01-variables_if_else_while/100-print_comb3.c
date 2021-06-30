@@ -1,27 +1,31 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include<stdio.h>
 
 /**
- * main - two digits
+ * main -  all possible different combinations of two digits
  * Return: 0
  */
 int main(void)
 {
-	int x;
-	int y;
+	int x = '0';
 
-	x = '0';
-	y = '1';
-	while (x <= '8')
+	while (x < '9')
 	{
+		int y = x + 1;
 		while (y <= '9')
 		{
-			putchar(x);
-			putchar(y);
-			putchar(',');
-			putchar(' ');
-			x = y + 1;
+			putchar (x);
+			putchar (y);
+			if (x <= '7' && y <= '9')
+			{
+				putchar (',');
+				putchar (' ');
+			}
+			y++;
 		}
+		x++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
