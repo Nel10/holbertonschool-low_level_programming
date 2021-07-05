@@ -12,12 +12,12 @@ int main(void)
 
 	printf("%lu, ", prev);
 	printf("%lu, ", curr);
-	for (counter = 3; counter < 44; counter++)
+	for (counter = 3; counter < 51; counter++)
 	{
 		sum = prev + curr;
 		prev = curr;
 		curr = sum;
-		if (counter < 43)
+		if (counter < 50)
 		{
 			printf("%lu, ", sum);
 		}
