@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * num_prime - the input integer is a prime number 
+ * num_prime - the input integer is a prime number
  * @x: variable
  * @y: variable
  * Return: 0
