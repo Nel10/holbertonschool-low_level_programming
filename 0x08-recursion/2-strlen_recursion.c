@@ -5,7 +5,7 @@
  * @s: pointer
  * Return: 0
  */
-void _strlen_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	int x = 0;
 
