@@ -1,10 +1,11 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * print_diagsums - sum of the two diagonals of a square matrix of integers.
  * @a: pointer
  * @size: variable
- * Return: void
+ * Return: 0
  */
 void print_diagsums(int *a, int size)
 {
