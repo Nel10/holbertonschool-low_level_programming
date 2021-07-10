@@ -8,11 +8,11 @@
  * @argv: argument vector
  * Return: the name, EXIT_SUCCESS
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	if (argc > 0)
 	{
 		printf("%s\n", argv[0]);
 	}
 	exit(EXIT_SUCCESS);
-}	
+}
