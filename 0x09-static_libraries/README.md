@@ -1,1 +1,0 @@
-i'm learning about static librairies
