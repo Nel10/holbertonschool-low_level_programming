@@ -10,12 +10,12 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *perrito;
+	struct dog *my_dog;
 	char *copyname, *copyowner;
 	int x = 0, y = 0, z;
 
-	perrito = malloc(sizeof(struct dog));
-	if (perrito == NULL)
+	my_dog = malloc(sizeof(struct dog));
+	if (my_dog == NULL)
 		return (NULL);
 	while (*(name + x) != '\0')
 		x++;
@@ -24,14 +24,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	copyname = malloc(sizeof(char) * (x + 1));
 	if (copyname == NULL)
 	{
-		free(perrito);
+		free(my_dog);
 		return (NULL);
 	}
 	copyowner = malloc(sizeof(char) * (y + 1));
 	if (copyowner == NULL)
 	{
 		free(copyname);
-		free(perrito);
+		free(my_dog);
 		return (NULL);
 	}
 	for (z = 0; z <= x; z++)
@@ -42,8 +42,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		*(copyowner + z) = *(owner + z);
 	}
-	perrito->name = copyname;
-	perrito->age = age;
-	perrito->owner = copyowner;
-	return (perrito);
+	my_dog->name = copyname;
+	my_dog->age = age;
+	my_dog->owner = copyowner;
+	return (my_dog);
 }
