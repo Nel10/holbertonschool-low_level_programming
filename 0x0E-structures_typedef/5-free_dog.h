@@ -9,10 +9,12 @@
  */
 void free_dog(dog_t *d)
 {
+	dog_t *my_dog = d;
+
 	if (d)
 	{
-		free(d->name);
-		free(d->age);
-		free(d->owner);
+		free(my_dog->name);
+		free(my_dog->age);
+		free(my_dog->owner);
 	}
 }
