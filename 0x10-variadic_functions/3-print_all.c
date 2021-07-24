@@ -40,13 +40,8 @@ void print_string(va_list s)
 	char *out = va_arg(s, char *);
 
 	if (out == NULL)
-	{
-		printf("(nil)");
-	}
-	else
-	{
-		printf("%s", out);
-	}
+		out = "(nil)";
+	printf("%s", out);
 }
 /**
  * print_all - Write a function that prints anything.
