@@ -1,7 +1,21 @@
 #include "variadic_functions.h"
 
 /**
- *
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
+/**
+ * print_strings - print strings
+ * @separator: const char
+ * @n: const int
+ * Return: 0
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -26,6 +40,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 		}
 	}
-	_putchar('\n');
-	va_end (string);
+	__putchar('\n');
+	va_end(string);
 }
