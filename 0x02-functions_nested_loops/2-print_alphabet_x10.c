@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_alphabet_x10 - all alphabet in ten lines
