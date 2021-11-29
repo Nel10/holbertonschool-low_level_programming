@@ -1,0 +1,5 @@
+# My second Makefile
+SRC = *.c
+CC = gcc
+all: school
+	$(CC) $(SRC)
